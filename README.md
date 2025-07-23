@@ -2,14 +2,112 @@
 # HARSHIL NAGORI
 # EnTC A2
 # 24070123046
-AIM: To study and implement C++ decision making statements
+Aim:
 
-SOFTWARE USED: VS Code
+    To write C++ programs using if-else and nested if statements. To use switch case for multiple conditions.
 
-THEORY: In C++, decision-making statements control the flow of a program based on specific conditions. These statements allow the program to evaluate expressions and decide which block of code to execute depending on whether a condition is true or false. This helps build intelligent programs that can react differently based on inputs, situations, or calculations. Types of Decision-Making Statements:
+Objectives:
 
-if Statement: Executes a block of code only if a specified condition is true. It's the most basic form of decision-making.
-if...else Statement: Provides an alternative path by specifying code to run when the condition is false.
-else if Ladder: Allows multiple conditions to be checked in sequence. Only the first true condition’s block gets executed.
-switch Statement: Used when you need to compare a single variable against multiple constant values. It’s cleaner and faster than using many else if conditions for discrete options.
-CONCLUSION: Decision-making statements are fundamental for writing flexible and intelligent C++ programs. They enable logic-based execution, allowing the program to make real-time choices based on given conditions.
+    Learn how to use if-else and nested if in real-life problems. Understand how switch case works and how to use break and exit(0).
+
+Theory:
+If-Else Statement
+
+    The if-else statement is used when we want to do know and decide if a condition is true or false.
+
+Syntax
+
+if (condition) {
+    // Code runs if condition is true
+}
+else {
+    // Code runs if condition is false
+}
+
+Nested If Statement
+
+    When an if is written inside another if, it is called a nested if. Used when there are multiple conditions to check.
+
+Syntax
+
+if (condition1) {
+    // Code if condition1 is true
+
+    if (condition2) {
+        // Code if condition2 is also true
+    }
+    else {
+        // Code if condition2 is false
+    }
+}
+else {
+    // Code if condition1 is false
+}
+
+Switch Case Statement
+
+    Used when we have to choose between many options based on one input variable. Helps reduce multiple if-else if lines. Use break to stop the program from checking more cases and overrwritting it. If no case matches, it runs the default statement.
+
+Syntax
+
+switch (expression) {
+    case value1:
+        // Code block 
+        break;
+
+    case value2:
+        // Code block
+        break;
+
+    // You can add as many cases as you want.
+    default:
+        // Code if no case matches
+}
+
+Program Descriptions
+
+    Concepts Used
+
+    if-else nested if switch case break and exit(0)
+
+Sample Programs & Outputs
+
+    Check if Number is Even or Odd
+
+Enter any number: -23  
+The number is negative.
+
+    Finding greatese of 3 numbers
+
+Enter 3 numbers: 2 8 0
+8 is greatest
+
+Enter 3 numbers: 0 1 1
+1 is greatest
+
+Enter 3 numbers: -4 5 4
+5 is greatest
+
+    Calculator (switch case)
+
+Available operations on the calculator:
+A) Addition
+B) Subtraction
+C) Multiplication
+D) Divison
+Enter operation you want to do(A,B,C,D): C
+
+Enter num 1:89
+Enter num 2:55
+
+Multiplication of the given numbers is 4895
+
+    Checking given alphabet is Vowel or Consonant
+
+Enter the alphabet: d
+It is a consonant.
+
+    Finding day of the week from the input number
+
+Enter number to know the day of the week(1 to 7): 6
+Its Saturday
